@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.dev1 (Python 3.11.2 on darwin)" generated="20230331 17:05:50.500" rpa="false" schemaversion="3">
+<suite id="s1" name="Gherkin" source="/Users/leannezammit/RobotDemo/gherkin.robot">
+<test id="s1-t1" name="Addition" line="16">
+<kw name="Given calculator has been cleared">
+<kw name="Push Button" library="CalculatorLibrary">
+<arg>C</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" starttime="20230331 17:05:50.514" endtime="20230331 17:05:50.514"/>
+</kw>
+<status status="PASS" starttime="20230331 17:05:50.514" endtime="20230331 17:05:50.514"/>
+</kw>
+<kw name="When user types &quot;1 + 1&quot;" sourcename="User types &quot;${expression}&quot;">
+<kw name="Push Buttons" library="CalculatorLibrary">
+<arg>${expression}</arg>
+<doc>Pushes the specified ``buttons``.</doc>
+<status status="PASS" starttime="20230331 17:05:50.515" endtime="20230331 17:05:50.515"/>
+</kw>
+<status status="PASS" starttime="20230331 17:05:50.514" endtime="20230331 17:05:50.515"/>
+</kw>
+<kw name="and user pushes equals">
+<kw name="Push Button" library="CalculatorLibrary">
+<arg>=</arg>
+<doc>Pushes the specified ``button``.</doc>
+<status status="PASS" starttime="20230331 17:05:50.515" endtime="20230331 17:05:50.515"/>
+</kw>
+<status status="PASS" starttime="20230331 17:05:50.515" endtime="20230331 17:05:50.515"/>
+</kw>
+<kw name="Then result is &quot;2&quot;" sourcename="Result is &quot;${result}&quot;">
+<kw name="Result Should Be" library="CalculatorLibrary">
+<arg>${result}</arg>
+<doc>Verifies that the current result is ``expected``.</doc>
+<status status="PASS" starttime="20230331 17:05:50.515" endtime="20230331 17:05:50.515"/>
+</kw>
+<status status="PASS" starttime="20230331 17:05:50.515" endtime="20230331 17:05:50.515"/>
+</kw>
+<status status="PASS" starttime="20230331 17:05:50.514" endtime="20230331 17:05:50.515"/>
+</test>
+<doc>Example test case using the gherkin syntax.
+
+This test has a workflow similar to the keyword-driven
+examples. The difference is that the keywords use higher
+abstraction level and their arguments are embedded into
+the keyword names.
+
+This kind of _gherkin_ syntax has been made popular by
+[http://cukes.info|Cucumber]. It works well especially when
+tests act as examples that need to be easily understood also
+by the business people.</doc>
+<status status="PASS" starttime="20230331 17:05:50.500" endtime="20230331 17:05:50.515"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Gherkin">Gherkin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
